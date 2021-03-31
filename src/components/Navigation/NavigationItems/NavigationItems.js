@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './NavigationItems.css';
 import NavigationItem from './NavigationItem/NavigationItem';
-import burger from '../../Burger/Burger'
+import Burger from '../../Burger/Burger'
 
 const navigationItems = (props) => (
     <ul className={classes.NavigationItems}>

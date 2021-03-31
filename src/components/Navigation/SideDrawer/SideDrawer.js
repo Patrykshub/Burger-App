@@ -6,7 +6,6 @@ import classes from './SideDrawer.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import Aaux from '../../../hoc/Aaux';
 
-
 const sideDrawer = (props) => {
     let attachedClasses = [classes.SideDrawer, classes.Close];
     if (props.open) {
@@ -18,6 +17,7 @@ const sideDrawer = (props) => {
         <div className={attachedClasses.join(' ')}>
             <div className={classes.Logo}>
                 <Logo />
+                <button onClick={props.closed}>Go back</button>
             </div>
 
             <nav>
