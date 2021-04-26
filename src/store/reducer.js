@@ -3,11 +3,12 @@ import * as actionTypes from './actions';
 const initialState = {
     ingredients: {           
     salad: 0,
-    meat: 0,
-    cheese: 0,
     bacon: 0,
+    cheese: 0,
+    meat: 0,
+    
+    },
     totalPrice: 4
-    }
 };
 
 const INGREDIENT_PRICES = {
@@ -37,8 +38,8 @@ const reducer = (state = initialState, action) => {
                 },
                 totalPrice: state.totalPrice - INGREDIENT_PRICES[action.ingredientName]
             };
-            default:
-                return state;    
+        default:
+            return state;    
     }
 };
 export default reducer;
